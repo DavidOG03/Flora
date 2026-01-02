@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-hedvig);
+  width: 100%;
+  height: 100svh;
+}
+
+#root {
+  width: inherit;
+  height: inherit;
+}
+
+@theme {
+  --font-montreal: "PP Neue Montreal Book", sans-serif;
+  --font-montreal-thin: "PP Neue Montreal Thin", sans-serif;
+  --font-montreal-medium: "PP Neue Montreal Medium", sans-serif;
+  --font-montreal-italic: "PP Neue Montreal Italic", sans-serif;
+  --font-montreal-semi-italic: "PP Neue Montreal SemiBold Italic", sans-serif;
+  --font-montreal-bold: "PP Neue Montreal Bold", sans-serif;
+  --font-hedvig: "Hedvig Letters Sans", sans-serif;
+  --color-gray: #99a1af;
+  --color-lime: oklch(76.8% 0.233 130.85);
+  /* --font-inter: "Inter Tight", sans-serif; */
+  --text-big: var(--font-big);
+}
+
+@layer base {
+  body {
+    @apply font-hedvig;
+  }
+}
+
+@font-face {
+  font-family: "PP Neue Montreal Book";
+  font-style: normal;
+  font-weight: normal;
+  src: local("PP Neue Montreal Book"),
+    url("ppneuemontreal-book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "PP Neue Montreal Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("PP Neue Montreal Italic"),
+    url("ppneuemontreal-italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "PP Neue Montreal Thin";
+  font-style: normal;
+  font-weight: lighter;
+  src: local("PP Neue Montreal Thin"),
+    url("ppneuemontreal-thin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "PP Neue Montreal Medium";
+  font-style: normal;
+  font-weight: medium;
+  src: local("PP Neue Montreal Medium"),
+    url("ppneuemontreal-medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "PP Neue Montreal SemiBold italic";
+  font-style: normal;
+  font-weight: 600;
+  src: local("PP Neue Montreal SemiBold italic"),
+    url("ppneuemontreal-semibolditalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "PP Neue Montreal Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local("PP Neue Montreal Bold"),
+    url("ppneuemontreal-bold.otf") format("opentype");
+}
