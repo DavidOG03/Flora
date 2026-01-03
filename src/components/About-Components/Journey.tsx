@@ -15,12 +15,12 @@ const Journey: React.FC = () => {
         <div className="relative border-l border-white/10 ml-4 md:ml-0 md:pl-8 space-y-12">
           {[
             {
-              year: "2012 - Founded",
+              year: "2015 - Founded",
               title: "The Beginning",
               desc: "Started as a small boutique studio with a passion for sustainable housing.",
             },
             {
-              year: "2016 - Expansion",
+              year: "2018 - Expansion",
               title: "Global Reach",
               desc: "Expanded operations to 3 continents, taking on international commercial projects.",
             },
