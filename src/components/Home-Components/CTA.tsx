@@ -5,15 +5,16 @@ const CTA = () => {
   return (
     <motion.div
       className="bg-[#0a0f0d] px-4 pb-24"
-      initial={{ opacity: 0, scale: 0.5 }}
+      initial={{ opacity: 0, scale: 0.95 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{
-        duration: 0.5,
+        duration: 0.15,
         ease: "easeOut",
         type: "spring",
-        stiffness: 10,
-        delay: 0.5,
+        stiffness: 100,
+        delay: 0.25,
       }}
+      viewport={{ once: true }}
     >
       <div className="max-w-7xl mx-auto bg-[#121815] rounded-lg p-12 border border-white/5 relative overflow-hidden">
         {/* Decorative background element */}
@@ -21,7 +22,7 @@ const CTA = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 relative z-10">
           <div>
-            <h2 className="text-3xl text-center md:text-left md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl text-center md:text-left md:text-4xl font-hedvig font-bold text-white mb-4">
               Ready to transform your <br />
               <span className="text-lime">outdoor space?</span>
             </h2>
@@ -32,7 +33,7 @@ const CTA = () => {
           </div>
           <Link
             to="/contact"
-            className="bg-lime hover:bg-lime text-black font-semibold py-4 px-8 rounded-sm transition-all whitespace-nowrap"
+            className="bg-lime hover:bg-lime text-black font-hedvig font-semibold py-4 px-8 rounded-sm transition-all whitespace-nowrap"
           >
             Book Consultation
           </Link>

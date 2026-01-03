@@ -6,10 +6,10 @@ const ContactForm: React.FC = () => {
   return (
     <motion.div
       className="bg-[#111A15] p-8 rounded-xl border border-white/5"
-      initial={{ opacity: 0, scale: 0.5 }}
+      initial={{ opacity: 0, scale: 0.95 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{
-        duration: 0.5,
+        duration: 0.25,
         ease: "easeOut",
         type: "spring",
         stiffness: 10,
@@ -17,9 +17,9 @@ const ContactForm: React.FC = () => {
       }}
       viewport={{ once: true }}
     >
-      <div className="overflow-hidden max-h-14">
+      <div className="overflow-hidden max-h-14 mb-6">
         <AnimatedHeading
-          text="Send us a message"
+          text="Send a message"
           css="text-4xl md:text-5xl font-hedvig font-bold text-white mb-4"
         />
       </div>
@@ -113,7 +113,7 @@ const ContactForm: React.FC = () => {
         </div>
 
         {/* Submit Button */}
-        <button className="w-full bg-lime-600 hover:bg-lime-500 text-black font-hedvig font-bold py-4 rounded flex items-center justify-center gap-2 transition-all group">
+        <button className="w-full bg-lime-600 hover:bg-lime-500 text-black font-hedvig font-medium py-4 rounded flex items-center justify-center gap-2 transition-all group">
           Request Consultation
           <svg
             xmlns="http://www.w3.org/2000/svg"

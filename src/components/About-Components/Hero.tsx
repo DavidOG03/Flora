@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <section className="relative pt-4 pb-4 md:pt-10 md:pb-10 px-4">
+    <section className="relative pt-0 pb-4 md:pt-0 md:pb-10 px-4">
       <div className="max-w-7xl mx-auto relative h-screen min-h-150 overflow-hidden flex items-center justify-center m-4 rounded-2xl">
         <div
           className="absolute inset-0 rounded-3xl"

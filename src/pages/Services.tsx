@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Services: React.FC = () => {
   return (
     <div className="w-full">
-      <section className="relative pt-40 pb-32 flex flex-col items-center justify-center text-center px-6 overflow-hidden">
+      <section className="relative pt-30 pb-32 flex flex-col items-center justify-center text-center px-6 overflow-hidden h-svh">
         {/* Subtle background glow */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-200 h-140 bg-lime/5 blur-[120px] rounded-full pointer-events-none" />
 
@@ -41,7 +41,7 @@ const Services: React.FC = () => {
         </p>
       </section>
       <section className="max-w-7xl mx-auto px-6 py-20">
-        <div className="flex items-center gap-3 mb-12 text-sm text-gray">
+        <div className="flex items-center gap-3 mb-6 text-sm text-gray">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24px"
@@ -58,9 +58,21 @@ const Services: React.FC = () => {
         </div>
 
         <div className="mb-12">
-          <h2 className="text-3xl font-hedvig font-bold mb-4">
-            Architectural Landscaping
-          </h2>
+          <div className="mb-6 flex flex-wrap gap-2">
+            <div className="overflow-hidden max-h-20 ">
+              <AnimatedHeading
+                text="Architectural"
+                css="text-4xl md:text-5xl font-hedvig text-center font-bold tracking-tighter mb-6 leading-tight"
+              />
+            </div>
+            <div className="overflow-hidden max-h-20 ">
+              <AnimatedHeading
+                text="Landscaping"
+                css="text-4xl md:text-5xl font-hedvig text-center font-bold tracking-tighter mb-6 leading-tight"
+              />
+            </div>
+          </div>
+
           <p className="text-gray text-sm max-w-2xl">
             Comprehensive design and maintenance modules tailored for modern
             living environments. Select a module to explore specifications.

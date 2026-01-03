@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
   // const [activeFilter, setActiveFilter] = useState("All Projects");
 
   return (
-    <section className="md:px-12 max-w-7xl mx-auto h-160 relative pt-40 pb-32 flex flex-col items-center justify-center text-center px-6 overflow-hidden">
+    <section className="md:px-12 max-w-7xl mx-auto h-svh relative pt-40 pb-32 flex flex-col items-center justify-center text-center px-6 overflow-hidden">
       <div className="mb-16 w-full h-full">
         <div className="flex gap-4 justify-center items-center overflow-hidden max-h-22 mb-4">
           <AnimatedHeading

@@ -7,14 +7,14 @@ const CTA: React.FC = () => {
     <section className="py-20 px-6">
       <motion.div
         className="max-w-7xl mx-auto"
-        initial={{ opacity: 0, scale: 0.5 }}
+        initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{
           duration: 0.5,
           ease: "easeOut",
           type: "spring",
-          stiffness: 10,
-          delay: 0.75,
+          stiffness: 100,
+          delay: 0.25,
         }}
         viewport={{ once: true }}
       >

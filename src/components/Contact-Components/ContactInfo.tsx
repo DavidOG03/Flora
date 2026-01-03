@@ -5,7 +5,7 @@ const ContactInfo: React.FC = () => {
   return (
     <div className="flex flex-col gap-8">
       <div>
-        <div className="overflow-hidden max-h-14">
+        <div className="overflow-hidden max-h-14 mb-6">
           <AnimatedHeading
             text="Contact Information"
             css="text-4xl md:text-5xl font-hedvig font-bold text-white mb-4"
@@ -40,10 +40,10 @@ const ContactInfo: React.FC = () => {
               VISIT US
             </p>
             <p className="text-white font-hedvig font-medium">
-              123 Green Thumb Lane,
+              123 Green Valley, No. 4
             </p>
             <p className="text-white font-hedvig font-medium">
-              Botanical City, BC 90210
+              San Francisco, CA 94103
             </p>
           </div>
         </div>
@@ -68,7 +68,7 @@ const ContactInfo: React.FC = () => {
               CALL US
             </p>
             <p className="text-white font-hedvig font-medium text-lg">
-              (555) 123-4567
+              +234 915 3884 943
             </p>
             <p className="text-gray-500 text-sm">Mon-Fri: 9am - 5pm</p>
           </div>
@@ -98,7 +98,7 @@ const ContactInfo: React.FC = () => {
               EMAIL US
             </p>
             <p className="text-white font-hedvig font-medium">
-              hello@horticulture.design
+              hello@florahaven.com
             </p>
           </div>
         </div>

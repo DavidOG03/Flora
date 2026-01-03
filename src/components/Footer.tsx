@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white pt-20 pb-10 px-4 border-t border-white/5">
+    <footer className="bg-black text-white pt-5 pb-10 px-4 border-t border-white/5">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
         {/* Brand */}
-        <div className="space-y-6">
+        <div className="space-y-[1rem]">
           <div className="flex items-center gap-2">
             <img src="/flora-logo.png" alt="Flora Logo" />
           </div>
